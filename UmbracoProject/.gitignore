@@ -1,4 +1,4 @@
-#This .gitigonre fiel is for project
+#This .gitigonre file is for project
 
 
 
@@ -31,7 +31,3 @@ umbraco-package-schema.json
 
 # Media files
 /wwwroot/media/
-
-
-/appsettings.json
-/appsettings.Development.json
