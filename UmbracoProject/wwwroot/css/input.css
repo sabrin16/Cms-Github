@@ -1,31 +1,29 @@
 ﻿@import "tailwindcss";
-
+@import "./rte.css";
+@import "./forms.css";
+@import "./swiper.css";
 
 @theme {
     --color-neutral: #ffffff;
-    --color-white: #F2EDDC;
-    --color-white-100: #F7F7F7;
-    --color-dark: #0E0E0E;
-    --color-primary: #4F5955;
+    --color-white: #f2eddc;
+    --color-white-100: #f7f7f7;
+    --color-dark: #0e0e0e;
+    --color-primary: #4f5955;
     --color-main-light: #606966;
-    --color-accent: #F2EDDC;
-    --color-secondary: #D9C3A9;
-    --color-gray-400: #4B5264;
+    --color-accent: #f2eddc;
+    --color-secondary: #d9c3a9;
+    --color-gray-400: #4b5264;
     --color-body-text: #535656;
     --color-body-text-100: #999999;
-    --color-note1: #9C9EA6;
-    --color-border-gray: #EAEAEA;
-    --color-border-400: #C7C8C9;
-
-
+    --color-note1: #9c9ea6;
+    --color-border-gray: #eaeaea;
+    --color-border-400: #c7c8c9;
     --font-poppins: "poppins", sans-serif;
-
-    --text-rte-xl: 4.37rem;
-    --text--rte-lg: 2.5rem;
+    --text-rte-xl: 4.375rem;
+    --text-rte-lg: 2.5rem;
     --text-rte-md: 1.25rem;
     --text-rte-sm: 1rem;
     --text-rte-xs: 0.875rem;
-
 }
 
 body {
@@ -33,8 +31,11 @@ body {
 }
 
 
-.rte h3 {
-    @apply text-[2.5rem] text-primary font-bold;
+.rte h3,
+.rte h3 span {
+    font-size: 2.5rem !important;
+    color: var(--color-primary) !important;
+    font-weight: var(--font-weight-bold) !important;
 }
 
 .current a {
@@ -45,18 +46,64 @@ body {
     @apply list-disc pl-5 mt-3;
 }
 
-.rte-ul li {
-    @apply text-rte-xs text-body-text mb-3;
-}
+    .rte-ul li {
+        @apply text-rte-xs text-body-text mb-3;
+    }
 
-.rte-ul li::marker {
-    @apply text-secondary;
-}
+        .rte-ul li::marker {
+            @apply text-secondary;
+        }
 
 .rte p {
     @apply mb-3;
 }
 
-img {
+
+.rte-img-full img {
     @apply w-full h-auto object-cover;
 }
+@import "tailwindcss";
+@import "./rte.css";
+@import "./forms.css";
+
+@theme {
+    --color-neutral: #ffffff;
+    --color-white: #f2eddc;
+    --color-white-100: #f7f7f7;
+    --color-dark: #0e0e0e;
+    --color-primary: #4f5955;
+    --color-main-light: #606966;
+    --color-accent: #f2eddc;
+    --color-secondary: #d9c3a9;
+    --color-gray-400: #4b5264;
+    --color-body-text: #535656;
+    --color-body-text-100: #999999;
+    --color-note1: #9c9ea6;
+    --color-border-gray: #eaeaea;
+    --color-border-400: #c7c8c9;
+    --font-poppins: "poppins", sans-serif;
+    --text-rte-xl: 4.375rem;
+    --text-rte-lg: 2.5rem;
+    --text-rte-md: 1.25rem;
+    --text-rte-sm: 1rem;
+    --text-rte-xs: 0.875rem;
+}
+
+body {
+    @apply font-poppins;
+}
+
+
+.rte h3,
+.rte h3 span {
+    font-size: 2.5rem !important;
+    color: var(--color-primary) !important;
+    font-weight: var(--font-weight-bold) !important;
+}
+
+.current a {
+    @apply text-secondary;
+}
+
+
+  

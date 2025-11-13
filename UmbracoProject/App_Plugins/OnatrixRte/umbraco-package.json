@@ -1,6 +1,6 @@
 {
   "name": "Onatrix Rte",
-  "alias": "OnatrixRte",
+  "alias": "Onatrix.Rte",
   "extensions": [
     {
       "type": "tiptapToolbarExtension",
@@ -14,10 +14,23 @@
       },
       "items": [
         {
+          "label": "Headings",
+          "items": [
+            {
+              "label": "Full width",
+              "data": {
+                "tag": "img",
+                "class": "rte-img-full"
+              },
+              "appearance": {}
+            }
+          ]
+        },
+        {
           "label": "Paragraphs",
           "items": [
             {
-              "label": "XL - 78",
+              "label": "XL - 70",
               "items": [
                 {
                   "label": "Light",
@@ -53,24 +66,21 @@
                   "data": {
                     "tag": "p",
                     "class": "text-rte-lg font-light"
-                  },
-                  "appearance": {}
+                  }
                 },
                 {
                   "label": "Normal",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-lg font-regular"
-                  },
-                  "appearance": {}
+                  }
                 },
                 {
                   "label": "Bold",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-lg font-bold"
-                  },
-                  "appearance": {}
+                  }
                 }
               ]
             },
@@ -160,7 +170,22 @@
             "tag": "ul",
             "class": "rte-ul"
           }
+        },
+        {
+          "label": "Image",
+          "items": [
+            {
+              "label": "Full width",
+              "data": {
+                "tag": "img",
+                "class": "rte-img-full"
+              },
+              "appearance": {}
+            }
+          ]
         }
+
+
       ]
     },
     {
@@ -169,7 +194,7 @@
       "alias": "Onatrix.Tiptap.BrandColors",
       "name": "Onatrix Brand Colors",
       "meta": {
-        "alias": "OnatrixBrandColors",
+        "alias": "OntarixBrandColors",
         "label": "Onatrix Colors"
       },
       "items": [
@@ -179,7 +204,9 @@
             "tag": "span",
             "class": "text-primary"
           },
-          "appearance": { "style": "background-color: #4F5955; color: #fff; padding: 5px;" }
+          "appearance": {
+            "style": "background-color: #4F5955; color:#fff; padding:5px;"
+          }
         },
         {
           "label": "Secondary",
@@ -187,7 +214,9 @@
             "tag": "span",
             "class": "text-secondary"
           },
-          "appearance": { "style": "background-color: #D9C3A9; color: #fff; padding: 5px;" }
+          "appearance": {
+            "style": "background-color: #D9C3A9; color:#fff; padding:5px;"
+          }
         },
         {
           "label": "Body",
@@ -195,7 +224,9 @@
             "tag": "span",
             "class": "text-body-text"
           },
-          "appearance": { "style": "background-color: #536565; color: #fff; padding: 5px;" }
+          "appearance": {
+            "style": "background-color: #535656; color:#fff; padding:5px;"
+          }
         },
         {
           "label": "Body-Light",
@@ -203,7 +234,9 @@
             "tag": "span",
             "class": "text-body-text-100"
           },
-          "appearance": { "style": "background-color: #999999; color: #fff; padding: 5px;" }
+          "appearance": {
+            "style": "background-color: #999999; color:#fff; padding:5px;"
+          }
         }
       ]
     }
