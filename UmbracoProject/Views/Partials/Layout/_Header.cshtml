@@ -10,14 +10,15 @@
 @inject IPublishedValueFallback PublishedValueFallback
 @inject IPublishedUrlProvider PublishedUrlProvider
 
-
 @{
     var rootContent = Umbraco.ContentAtRoot();
     var siteSettings = rootContent.OfType<SiteSettings>().FirstOrDefault();
     var logo = siteSettings?.SiteLogo;
-
-    var selection = Model.Root().Children().Where(x => x.IsVisible(PublishedValueFallback)).ToArray(); 
+    var selection = Model.Root().Children().Where(x => x.IsVisible(PublishedValueFallback)).ToArray();
 }
+
+
+
 
 
 <header class="relative shadow-sm z-[999]">
@@ -48,8 +49,10 @@
             </ul>
         }
 
+
         <div class="flex items-center">
-            <i class="fa-solid fa-magnifying-glass text-lg text-primary"></i>
+            <i class="fa-solid fa-magnifying-glass text-lg text-primary "></i>
         </div>
+
     </nav>
 </header>

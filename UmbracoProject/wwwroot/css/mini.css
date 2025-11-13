@@ -460,6 +460,9 @@
   .\[background-image\:url\(\'\/images\/Rectangle-left\.svg\'\)\,url\(\'\/images\/Rectangle-right\.svg\'\)\] {
     background-image: url('/images/Rectangle-left.svg'),url('/images/Rectangle-right.svg');
   }
+  .\[background-image\:url\(\'\~\/images\/Rectangle-left\.svg\'\)\,url\(\'\~\/images\/Rectangle-right\.svg\'\)\] {
+    background-image: url('~/images/Rectangle-left.svg'),url('~/images/Rectangle-right.svg');
+  }
   .\[background-position\:left_bottom\,top_right\] {
     background-position: left bottom,top right;
   }
