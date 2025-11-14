@@ -24,6 +24,13 @@
     <Folder Include="App_Plugins\OnatrixRte\" />
   </ItemGroup>
 
+
+	<ItemGroup>
+		<Content Update="web.config">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
   <PropertyGroup>
     <!-- Razor files are needed for the backoffice to work correctly -->
     <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
